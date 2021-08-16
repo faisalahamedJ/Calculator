@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="output">
+            <div class="result">0</div>
+            <div class="prev_result"><p>0</p></div>
+            <div class="operand_display"></div>
+        </div>
+        <div class="keyboards">
+            <div class="row">
+                <button data-all-clear class="colspan">Ac</button>
+                <button data-delete>Del</button>
+                <button data-operation>+</button>
+            </div>
+            <div class="row">
+                <button data-number value="1">1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation>-</button>
+            </div>
+            <div class="row">
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation>*</button>
+            </div>
+            <div class="row">
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation>/</button>
+            </div>
+            <div class="row">
+                <button data-decimal class="left_curve">.</button>
+                <button data-number>0</button>
+                <button data-operation class="colspan right_curve">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
