@@ -160,6 +160,9 @@ function updateDisplay(){
         if(filterButton.value != 'all'){
             window.location.reload();
         }
+        if(!id){
+            historyArea.innerHTML = '';
+        }
         p = JSON.parse(window.localStorage.getItem(id));
         let para = document.createElement('p')
         para.innerHTML   =p + '<br>' + '<br>';
