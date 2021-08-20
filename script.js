@@ -17,9 +17,14 @@ let p = document.createElement('p');
         
 //Initially to display History Value
 document.addEventListener('DOMContentLoaded', () => {
-    for(let i = localStorage.length-1; i >= 0 ; i--){
-        p.textContent = JSON.parse(window.localStorage.getItem(i));
-        historyArea.innerHTML += p.textContent + '<br>' + '<br>' ;
+    if(localStorage.length == 0){
+        historyArea.innerHTML = ' No History';
+    }
+    else{
+        for(let i = localStorage.length-1; i >= 0 ; i--){
+            p.textContent = JSON.parse(window.localStorage.getItem(i));
+            historyArea.innerHTML += p.textContent + '<br>' + '<br>' ;
+        }
     }
 })
 
