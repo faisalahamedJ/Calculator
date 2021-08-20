@@ -248,7 +248,5 @@ button[data-operation]{
     .container{
         width: 90vw;
     }
-    .filter_box{
-        font-size: .5rem;
-    }
+ 
 }
